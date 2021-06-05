@@ -201,10 +201,22 @@
 
 
                 </div><!-- / end div  .post_data -->
-                <center>
-                  <iframe data-aa="1648187" src="//ad.a-ads.com/1648187?size=468x60" scrolling="no"
+                <script>
+                  var ads = [`<iframe data-aa="1648187" src="//ad.a-ads.com/1648187?size=468x60" scrolling="no"
                     style="width:468px; height:60px; border:0px; padding:0; overflow:hidden"
-                    allowtransparency="true"></iframe>
+                    allowtransparency="true"></iframe>`,`<iframe data-aa="1648186" src="//ad.a-ads.com/1648186?size=300x250" scrolling="no"
+                    style="width:300px; height:250px; border:0px; padding:0; overflow:hidden"
+                    allowtransparency="true"></iframe>`, `<iframe data-aa="1654171" src="//ad.a-ads.com/1654171?size=320x100" scrolling="no"
+                    style="width:320px; height:100px; border:0px; padding:0; overflow:hidden"
+                    allowtransparency="true"></iframe>`,
+
+                  ]
+                  var order = new Date().getMinutes()%2;
+                </script>
+                <center>
+                  <script>
+                    document.write(ads[order ? 0 : 1])
+                  </script>
 
                 </center>
                 <!-- content-->
@@ -238,9 +250,7 @@
                   created in 2011, a point source platform that is regulated by a decentralized network. LTC is the
                   authorized token manipulated in the network of bitcoin.</p>
                 <center>
-                  <iframe data-aa="1654171" src="//ad.a-ads.com/1654171?size=320x100" scrolling="no"
-                    style="width:320px; height:100px; border:0px; padding:0; overflow:hidden"
-                    allowtransparency="true"></iframe>
+                  
 
                 </center>
                 <p><strong>Monero</strong></p>
@@ -260,9 +270,12 @@
                   bitcoin pro website is a tremendous platform.</p>
                 <p>&nbsp;</p>
                 <center>
-                  <iframe data-aa="1648186" src="//ad.a-ads.com/1648186?size=300x250" scrolling="no"
-                    style="width:300px; height:250px; border:0px; padding:0; overflow:hidden"
-                    allowtransparency="true"></iframe>
+                  
+                    <script>
+                      document.write(ads[order ? 1 : 0])
+                    </script>
+                    
+                    
                 </center>
 
                 <!-- pagination-->
