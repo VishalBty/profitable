@@ -195,11 +195,11 @@
                     allowtransparency="true"></iframe>`,
 
                   ]
-                  var order = new Date().getMinutes()%3;
+                  var order = new Date().getMinutes()%10;
                 </script>
                 <center>
                   <script>
-                    document.write(ads[(order+1)%3])
+                    document.write(ads[order%3])
                   </script>
 
                 </center>
@@ -251,7 +251,7 @@
                   authorized token manipulated in the network of bitcoin.</p>
                   <center>
                     <script>
-                      document.write(ads[(order+2)%3])
+                      document.write(ads[order%3])
                     </script>
   
                   </center>
@@ -273,7 +273,7 @@
                 <p>&nbsp;</p>
                 <center>
                   <script>
-                    document.write(ads[(order+3)%3])
+                    document.write(ads[order%3])
                   </script>
 
                 </center>
